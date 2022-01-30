@@ -1,0 +1,127 @@
+// Font Variable
+$Spartan: 'Spartan', sans-serif;
+
+// Font Styling
+body{
+    font-size: 15px;
+    font-family: $Spartan;
+    text-align: center;
+    @media #{$mq-1400-down} {
+        padding: 80px 20px;
+    }
+}
+.header{
+    h1{
+        margin-bottom: 20px;
+        
+        @media #{$mq-685-up} {
+            width: 645px;
+            margin: 0 auto;
+        }
+        @media #{$mq-1400-up} {
+            width: 400px;
+            font-size: 3em;
+            text-align: start;
+            margin-bottom: 10px;
+        }
+        @media #{$mq-1440-up} {
+            width: 100%;
+            padding-right: 100px;
+        }
+    }
+    p{
+        font-weight: 500;
+        width: 340px;
+        margin-bottom: 45px;
+        line-height: 1.7em;
+        @media #{$mq-375-down} {
+            width: 100%;
+        }
+        @media #{$mq-375-up } {
+            width: 100%;
+        }
+        @media #{$mq-685-up} {
+            width: 645px;
+            margin: 0 auto;
+        }
+        @media #{$mq-1400-up} {
+            font-size: 1.1em;
+            width: 470px;
+            text-align: start;
+        }
+        @media #{$mq-1440-up} {
+            width: 100%;
+            padding-right: 100px;
+        }
+    }
+
+    //header breakpoint
+    @media #{$mq-1440-up} {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+.stars{
+    padding: 15px 0;
+    margin: 15px 0;
+    border-radius: 10px;
+    h5{
+        margin-top: 7px;
+    }
+    @media #{$mq-600-up} {
+        h5{
+            padding-bottom: 8px;
+        }
+    }
+    @media #{$mq-1400-up} {
+        font-size: 1.2em;
+    }
+}
+.purple{
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+    border-radius: 12px;
+    padding: 40px 30px;
+    p{
+        text-align: left;
+        letter-spacing: 2;
+        font-size: 13px;
+        line-height: 1.8em;
+        
+        @media #{$mq-600-up} {
+            width: 290px;
+        }
+        @media #{$mq-1440-up} {
+            width: 325px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+    }
+
+}
+.pfp{
+    display: flex;
+    margin-bottom: 30px;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+    span{
+        margin-top: 5px;
+        font-size: 13px;
+    }
+}
+
+.irene{
+    padding-right: 35px;
+    @media #{$mq-600-up} {
+        padding-right: 0;
+    }
+}
+
+.anne{
+    padding-right: 35px;
+}

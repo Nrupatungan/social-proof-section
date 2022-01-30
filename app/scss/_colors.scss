@@ -1,0 +1,30 @@
+$VeryDarkMagenta: hsl(300, 43%, 22%);
+$SoftPink: hsl(333, 80%, 67%);
+$DarkGrayishMagenta: hsl(303, 10%, 53%);
+$LightGrayishMagenta: hsl(300, 24%, 96%);
+$White: hsl(0, 0%, 100%);
+
+
+.header{
+    h1{
+        color: $VeryDarkMagenta;
+    }
+    p{
+        color: $DarkGrayishMagenta;
+    }
+}
+.stars{
+    background-color: $LightGrayishMagenta;
+    h5{
+        color: $VeryDarkMagenta;
+    }
+}
+.purple{
+    background-color: $VeryDarkMagenta;
+    color: $White;
+}
+.text{
+    span{
+        color: $SoftPink;
+    }
+}

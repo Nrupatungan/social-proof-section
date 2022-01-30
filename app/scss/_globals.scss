@@ -1,0 +1,132 @@
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    @media #{$mq-1400-up} {
+        position: relative;
+        min-height: 100vh;
+        padding: 0 0;
+    }
+}
+main{
+    @media #{$mq-1400-up} {
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        display: grid;
+        grid-template: repeat(2,1fr) / repeat(2,600px) ;
+    }
+    @media #{$mq-1440-up} {
+        grid-template: repeat(2,320px) / repeat(2,600px) ;
+        grid-gap: 50px;
+    }
+}
+
+.ratings{
+    @media #{$mq-600-up} {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    @media #{$mq-1440-up} {
+        display: flex;
+    }
+}
+
+.stars{
+    @media #{$mq-600-up} {
+        width: 480px;
+        display: flex;
+        align-items: center;
+        .star-img{
+            margin-left: 40px;
+            margin-right: 50px;
+        }
+        img{
+            height: 1em;
+        }
+    } 
+}
+.box1{
+    @media #{$mq-1440-up} {
+       align-self: flex-start;
+    }
+
+}
+.box2{
+    @media #{$mq-1440-up} {
+        justify-self: center;
+    }
+
+}
+.box3{
+    @media #{$mq-1440-up} {
+        align-self: flex-end;
+    }
+}
+
+.testimonials{
+    @media #{$mq-600-up} {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    @media #{$mq-1400-up} {
+        grid-column: 1/-1;
+        grid-row: 2;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.purple{
+    @media #{$mq-600-up} {
+        width: 370px;
+        height: 260px;
+        display: flex;
+    }
+    @media #{$mq-1440-up} {
+        width: 395px;
+        height: 270px;
+        display: flex;
+    }
+}
+.colton{
+    @media #{$mq-1440-up} {
+        align-self: flex-start;
+        justify-self: flex-start;
+    }
+}
+.irene{
+    @media #{$mq-1440-up} {
+        align-self: center;
+        justify-self: center;
+    }
+}
+.anne{
+    @media #{$mq-1440-up} {
+        align-self: flex-end;
+        justify-self: flex-end;
+    }
+}
+
+.pfp{
+    img{
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        margin-right: 30px;
+    }
+}

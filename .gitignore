@@ -1,0 +1,11 @@
+#node module (large file)
+node_modules/
+
+#"note.md"
+note.md
+
+#"Stle.md"
+style-guide.md
+
+#design folder (not needed)
+design/
